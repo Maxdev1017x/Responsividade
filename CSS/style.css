@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    color: #fff;
+}
+
+header {
+    padding: 16px 0;
+    background-color: #154ed5;
+    color: #ecf0f1;
+    margin-bottom: 42px;
+}
+
+header .container,
+section .container  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav li {
+    display: inline;
+    margin-left: 16px;
+    font-size: 18px;
+}
+
+header nav li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-weight:bold;
+}
+
+header nav li a:hover {
+    color: #111;
+}
+
+.border1 {
+    border: 1px solid #154ed5;
+    margin-bottom: 46px;
+}
+
+.border {
+    border: 1px solid #154ed5;
+    margin-bottom: 46px;
+}
+
+.store-front {
+    width: 50%;
+}
+
+section .container {
+    align-items: flex-start;
+}
+
+section {
+    padding: 24px 0;
+    margin-bottom: 60px;
+    color:#154ed5;
+}
+
+section h2 {
+    margin-bottom: 16px;
+    color: #111;
+    text-align: center;
+}
+
+section p {
+    color:#111;
+}
+
+.store-front {
+    margin-right: 50px;
+}
+
+#Products {
+    max-width: 1024px;
+    width:100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#products h2 {
+    margin: 40px;
+}
+
+.lista-tênis {
+    display: grid;
+    grid-template-columns: repeat(4, 24.25%);
+    column-gap: 1%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.lista-tênis img {
+    max-width: 300px;
+    width:100%
+}
+
+.lista-tênis li {
+    list-style: none;
+    max-width: 100%;
+    margin-bottom: 24px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: #119759;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-top: 6px;
+}
+
+button:hover {
+    background-color: #17cc7e;
+    color: #192a56;
+}
+
+strong {
+    color: #111;
+}
+
+footer {
+    display: flex;
+    padding-left: 10px;
+    color: #111;
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    section .container {
+        display: block;
+    }
+    .store-front {
+        width: 100%;
+    }
+    section .container h2 {
+        margin-top: 16px;
+    }
+    .container {
+        max-width: 1024px;
+        width: 90%;
+        margin: 0 auto;
+    }
+    #Products {
+        max-width: 1024px;
+        width:90%;
+        margin: 0 auto;
+    }
+
+.lista-tênis {
+    display: grid;
+    grid-template-columns: repeat(2, 49%);
+    column-gap: 1%;
+}
+}
+
+@media screen and (max-width: 640px) {
+    section .container {
+        display: block;
+    }
+    .store-front {
+        width: 100%;
+        
+    }
+    section .container h2 {
+        margin-top: 16px;
+    }
+    .container {
+        max-width: 1024px;
+        width: 90%;
+        margin: 0 auto;
+    }
+    #Products {
+        max-width: 1024px;
+        width:90%;
+        margin: 0 auto;
+    }
+
+.lista-tênis {
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    column-gap: 1%;
+    }
+}
